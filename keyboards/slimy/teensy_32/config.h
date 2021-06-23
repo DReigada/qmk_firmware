@@ -24,7 +24,7 @@
 #define UNUSED_PINS
 
 // i2c_master defines
-#define I2C1_SCL 0 // A2 on pinout = B0
-#define I2C1_SDA 1 // A3 on pinout = B1
+#define I2C1_SCL 2 // B2 = 19
+#define I2C1_SDA 3 // B3 = 18
 #define I2C1_SCL_PAL_MODE PAL_MODE_ALTERNATIVE_2
 #define I2C1_SDA_PAL_MODE PAL_MODE_ALTERNATIVE_2
