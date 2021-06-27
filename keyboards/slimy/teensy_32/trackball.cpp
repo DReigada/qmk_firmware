@@ -72,7 +72,7 @@ __attribute__((weak)) void trackball_check_click(bool pressed, report_mouse_t* m
 
 bool process_record_kb(uint16_t keycode, keyrecord_t* record) {
     if (true) {
-        xprintf("KL: kc: %u, col: %u, row: %u, pressed: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed);
+        dprintf("KL: kc: %u, col: %u, row: %u, pressed: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed);
     }
 
 
@@ -152,7 +152,7 @@ void pointing_device_task(void) {
         // h_offset != 0 ||
         // v_offset
         // ){
-        //     uprintf("%d %d %d %d\n", x_offset, y_offset, h_offset, v_offset);
+        //     dprintf("%d %d %d %d\n", x_offset, y_offset, h_offset, v_offset);
         // }
 
     }
@@ -172,7 +172,7 @@ void pointing_device_task(void) {
         blue += mouse.x; if (blue > 255) blue = 255; if (blue < 1) blue = 1;
         green += mouse.y; if (green > 255) green = 255; if (green < 1) green = 1;
 
-        uprintf("%d %d %d %d\n", mouse.x, mouse.y, green, blue);
+        dprintf("%d %d %d %d\n", mouse.x, mouse.y, green, blue);
 
         trackball_set_rgbw(0, green, blue, 0);
 

@@ -40,8 +40,10 @@ void print_set_sendchar(sendchar_func_t func);
 #        include "printf.h"  // lib/printf/printf.h
 
 // Create user & normal print defines
+#ifndef __cplusplus
 #        define print(s) printf(s)
 #        define println(s) printf(s "\r\n")
+#    endif
 #        define xprintf printf
 #        define uprint(s) printf(s)
 #        define uprintln(s) printf(s "\r\n")
@@ -51,8 +53,10 @@ void print_set_sendchar(sendchar_func_t func);
 #else      /* NO_PRINT */
 #    undef xprintf
 // Remove print defines
+#ifndef __cplusplus
 #    define print(s)
 #    define println(s)
+#endif
 #    define xprintf(fmt, ...)
 #    define uprintf(fmt, ...)
 #    define uprint(s)
@@ -62,7 +66,7 @@ void print_set_sendchar(sendchar_func_t func);
 
 #ifdef USER_PRINT
 // Remove normal print defines
-#    undef print
+// #    undef print
 #    undef println
 #    undef xprintf
 #    define print(s)

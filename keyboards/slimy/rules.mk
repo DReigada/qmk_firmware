@@ -21,3 +21,6 @@ DEFAULT_FOLDER = slimy/teensy_32
 LAYOUTS = ortho_1x1
 
 OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
+
+SRC += slimy.cpp
+VPATH += keyboards/slimy/lib/Arduino-teensy/teensy3
