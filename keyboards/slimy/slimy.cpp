@@ -1,6 +1,8 @@
 #include "slimy.h"
 #include "board.h"
 
+#include <Arduino.h>
+
 #define XSTR1(x) STR1(x)
 #define STR1(x) #x
 

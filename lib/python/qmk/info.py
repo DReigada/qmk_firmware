@@ -146,7 +146,7 @@ def _pin_name(pin):
     elif pin[0] in 'ABCDEFGHIJK' and pin[1].isdigit():
         return pin
 
-    raise ValueError(f'Invalid pin: {pin}')
+    # raise ValueError(f'Invalid pin: {pin}')
 
 
 def _extract_pins(pins):

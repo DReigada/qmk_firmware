@@ -19,8 +19,8 @@
 // TODO: including this causes "error: expected identifier before '(' token" errors
 //#include "config_common.h"
 
-#define MATRIX_COL_PINS { C5 }
-#define MATRIX_ROW_PINS { C6 }
+#define MATRIX_COL_PINS { LINE_PIN10 }
+#define MATRIX_ROW_PINS { LINE_PIN11 }
 #define UNUSED_PINS
 
 // i2c_master defines
