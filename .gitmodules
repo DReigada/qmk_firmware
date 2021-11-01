@@ -25,3 +25,18 @@
 [submodule "keyboards/slimy/lib/Arduino-teensy"]
 	path = keyboards/slimy/lib/Arduino-teensy
 	url = git@github.com:PaulStoffregen/cores.git
+[submodule "keyboards/lib/Adafruit-ST7735"]
+	path = keyboards/lib/Adafruit-ST7735
+	url = git@github.com:adafruit/Adafruit-ST7735-Library.git
+[submodule "keyboards/lib/Adafruit-GFX"]
+	path = keyboards/lib/Adafruit-GFX
+	url = git@github.com:adafruit/Adafruit-GFX-Library.git
+[submodule "keyboards/slimy/lib/Adafruit-GFX"]
+	path = keyboards/slimy/lib/Adafruit-GFX
+	url = git@github.com:adafruit/Adafruit-GFX-Library.git
+[submodule "keyboards/slimy/lib/Adafruit-ST7735"]
+	path = keyboards/slimy/lib/Adafruit-ST7735
+	url = git@github.com:adafruit/Adafruit-ST7735-Library.git
+[submodule "keyboards/slimy/lib/SPI"]
+	path = keyboards/slimy/lib/SPI
+	url = git@github.com:PaulStoffregen/SPI.git

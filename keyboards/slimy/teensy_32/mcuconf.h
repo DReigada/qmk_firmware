@@ -18,19 +18,24 @@
 #define _MCUCONF_H_
 
 #define K20x_MCUCONF
-#define __MK20DX256__
+// #define __MK20DX256__
 
+#define ARDUINO 100
+//#define KINETISK
+//#define TEENSYDUINO 200
+// #define CDC_DATA_INTERFACE
+// #define CDC_STATUS_INTERFACE
 /*
  * HAL driver system settings.
  */
 /* PEE mode - 48MHz system clock driven by (16 MHz) external crystal. */
 #define KINETIS_MCG_MODE            KINETIS_MCG_MODE_PEE
 #define KINETIS_PLLCLK_FREQUENCY    96000000UL
-#define F_CPU                       96000000UL
+//#define F_CPU                       96000000UL
 #define KINETIS_SYSCLK_FREQUENCY    48000000UL
 
 // keylayouts.h requires this
-#define LAYOUT_US_ENGLISH
+// #define LAYOUT_US_ENGLISH
 
 /*
  * SERIAL driver system settings.
