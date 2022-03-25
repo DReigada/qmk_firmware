@@ -156,6 +156,10 @@ void keyboard_post_init_kb(void) {
 
     // displayUpTime();
 
+    while(1){
+        yield();
+    }
+
     // apply
     // tft.enableDisplay(isDisplayVisible);
 

@@ -20,10 +20,11 @@ POINTING_DEVICE_ENABLE = yes
 DEFAULT_FOLDER = slimy/teensy_32
 LAYOUTS = ortho_1x1
 
-OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE -D__MK20DX256__ -DF_CPU=96000000 -DLAYOUT_US_ENGLISH -DTEENSYDUINO=200
+OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE -D__MK20DX256__ -DF_CPU=96000000 -DLAYOUT_US_ENGLISH -DTEENSYDUINO=200 -DUSB_SERIAL
 
 SRC += slimy.cpp
-SRC += Adafruit_GFX.cpp pins_teensy.c Print.cpp usb_inst.cpp #yield.cpp
+SRC += Adafruit_GFX.cpp pins_teensy.c Print.cpp usb_inst.cpp yield.cpp
+SRC += $(wildcard  keyboards/slimy/lib/Arduino-teensy/teensy3/*.cpp) $(wildcard  keyboards/slimy/lib/Arduino-teensy/teensy3/*.c)
 SRC += $(wildcard  keyboards/slimy/lib/SPI/*.cpp)
 SRC += $(wildcard  keyboards/slimy/lib/Adafruit-ST7735/*.cpp)
 SRC += Adafruit_GFX.cpp Adafruit_SPITFT.cpp
