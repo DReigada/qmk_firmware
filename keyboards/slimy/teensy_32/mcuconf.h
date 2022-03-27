@@ -46,6 +46,6 @@
  * I2C driver settings
  */
 #define KINETIS_I2C_USE_I2C0                TRUE
-#define KINETIS_I2C_I2C0_PRIORITY           4
+#define KINETIS_I2C_I2C0_PRIORITY           8
 
 #endif /* _MCUCONF_H_ */

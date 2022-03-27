@@ -15,9 +15,9 @@ NKRO_ENABLE = yes           # USB Nkey Rollover
 MOUSEKEY_ENABLE = yes       # Mouse keys(+4700)
 EXTRAKEY_ENABLE = yes       # Audio control and System control(+450)
 CONSOLE_ENABLE = yes        # Console for debug(+400)
-POINTING_DEVICE_ENABLE = yes
 
 DEFAULT_FOLDER = slimy/teensy_32
 LAYOUTS = ortho_1x1
 
+# Enter lower-power sleep mode when on the ChibiOS idle thread
 OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE

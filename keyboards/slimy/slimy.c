@@ -1,5 +1,7 @@
 #include "slimy.h"
 #include "board.h"
+#include "print.h"
+#include "debug.h"
 
 #define XSTR1(x) STR1(x)
 #define STR1(x) #x
@@ -14,4 +16,5 @@ void keyboard_post_init_kb(void) {
     // Turn on boar LED
     setPinOutput(LINE_PIN13);
     writePinHigh(LINE_PIN13);
+    //writePinLow(LINE_PIN13);
 }
