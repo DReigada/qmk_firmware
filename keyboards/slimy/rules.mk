@@ -16,9 +16,6 @@ MOUSEKEY_ENABLE = yes       # Mouse keys(+4700)
 EXTRAKEY_ENABLE = yes       # Audio control and System control(+450)
 CONSOLE_ENABLE = yes        # Console for debug(+400)
 
-POINTING_DEVICE_ENABLE = yes
-POINTING_DEVICE_DRIVER = pimoroni_trackball
-
 DEFAULT_FOLDER = slimy/teensy_32
 LAYOUTS = ortho_1x1
 

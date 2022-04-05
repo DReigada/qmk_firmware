@@ -67,17 +67,22 @@ bool qp_comms_spi_dc_reset_init(painter_device_t device) {
         return false;
     }
 
+    wait_ms(100);
+    dprintf("Hay \n");
+
     struct painter_driver_t *              driver       = (struct painter_driver_t *)device;
     struct qp_comms_spi_dc_reset_config_t *comms_config = (struct qp_comms_spi_dc_reset_config_t *)driver->comms_config;
 
     // Set up D/C as output low, if specified
     if (comms_config->dc_pin != NO_PIN) {
+        dprintf("Hay1 \n");
         setPinOutput(comms_config->dc_pin);
         writePinLow(comms_config->dc_pin);
     }
 
     // Set up RST as output, if specified, performing a reset in the process
     if (comms_config->reset_pin != NO_PIN) {
+        dprintf("Hay2 \n");
         setPinOutput(comms_config->reset_pin);
         writePinLow(comms_config->reset_pin);
         wait_ms(20);

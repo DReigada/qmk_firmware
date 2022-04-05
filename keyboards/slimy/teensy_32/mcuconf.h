@@ -25,7 +25,11 @@
 /* PEE mode - 48MHz system clock driven by (16 MHz) external crystal. */
 #define KINETIS_MCG_MODE            KINETIS_MCG_MODE_PEE
 #define KINETIS_PLLCLK_FREQUENCY    96000000UL
-#define KINETIS_SYSCLK_FREQUENCY    48000000UL
+//define KINETIS_SYSCLK_FREQUENCY    48000000UL
+
+//define KINETIS_MCG_MODE            KINETIS_MCG_MODE_PEE
+//define KINETIS_PLLCLK_FREQUENCY    24000000UL
+//define KINETIS_SYSCLK_FREQUENCY    12000000UL
 
 /*
  * SERIAL driver system settings.
@@ -46,6 +50,12 @@
  * I2C driver settings
  */
 #define KINETIS_I2C_USE_I2C0                TRUE
-#define KINETIS_I2C_I2C0_PRIORITY           8
+#define KINETIS_I2C_I2C0_PRIORITY           6
+
+#undef KINETIS_SPI_USE_SPI0
+#define KINETIS_SPI_USE_SPI0 TRUE
+
+// #undef KINETIS_SPI_USE_SPI1
+// #define KINETIS_SPI_USE_SPI1 TRUE
 
 #endif /* _MCUCONF_H_ */
