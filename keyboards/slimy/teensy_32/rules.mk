@@ -9,3 +9,6 @@ POINTING_DEVICE_DRIVER = pimoroni_trackball
 
 QUANTUM_PAINTER_ENABLE = yes
 QUANTUM_PAINTER_DRIVERS = st7789_spi
+
+SRC += gordo.qgf.c
+# ALLINC += 90882a184302c5c6.qgf.h

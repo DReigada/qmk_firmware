@@ -20,6 +20,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <stdbool.h>
 #include "print.h"
 
+#define TIME(a, x) \
+  do { \
+    uint32_t timer_123 = timer_read32(); \
+    {x} \
+    dprintf("%s, DEBUG TIME: %ld \n", a, timer_elapsed32(timer_123)); \
+  } while(0);
+
 #ifdef __cplusplus
 extern "C" {
 #endif
