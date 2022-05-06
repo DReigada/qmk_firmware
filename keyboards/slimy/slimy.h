@@ -23,3 +23,10 @@
 ) { \
     { k00 } \
 }
+
+#define TIME(a, x) \
+  do { \
+    uint32_t timer_123 = timer_read32(); \
+    {x} \
+    dprintf("%s, DEBUG TIME: %ld \n", a, timer_elapsed32(timer_123)); \
+  } while(0);
