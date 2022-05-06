@@ -21,3 +21,7 @@ LAYOUTS = ortho_1x1
 
 # Enter lower-power sleep mode when on the ChibiOS idle thread
 OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
+
+KEYBOARD_PATH = keyboards/slimy/generated
+SRC += $(wildcard ${KEYBOARD_PATH}/*.c)
+VPATH += ${KEYBOARD_PATH}
