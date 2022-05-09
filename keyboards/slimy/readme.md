@@ -4,9 +4,9 @@
 
 *A short description of the keyboard/project*
 
-* Keyboard Maintainer: [Daniel Reigada](https://github.com/yourusername)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Keyboard Maintainer: [Daniel Reigada](https://github.com/DReigada)
+* Hardware Supported: [Teensy3.2](https://www.pjrc.com/store/teensy32.html)
+* Hardware Availability: idk lol
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -15,5 +15,3 @@ Make example for this keyboard (after setting up your build environment):
 Flashing example for this keyboard:
 
     make slimy:default:flash
-
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).

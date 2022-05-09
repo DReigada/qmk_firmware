@@ -22,6 +22,9 @@ POINTING_DEVICE_DRIVER = pimoroni_trackball
 QUANTUM_PAINTER_ENABLE = yes
 QUANTUM_PAINTER_DRIVERS = st7789_spi
 
+BACKLIGHT_ENABLE = yes
+BACKLIGHT_DRIVER = custom
+
 DEFAULT_FOLDER = slimy
 LAYOUTS = ortho_1x1
 
@@ -32,13 +35,10 @@ BOOTLOADER = halfkay
 # Enter lower-power sleep mode when on the ChibiOS idle thread
 OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
 
-BACKLIGHT_ENABLE = yes
-BACKLIGHT_DRIVER = custom
-
 KEYBOARD_PATH = keyboards/slimy
-SRC += $(wildcard ${KEYBOARD_PATH}/*.c)
-VPATH += ${KEYBOARD_PATH}
-
 GENERATED_PATH=${KEYBOARD_PATH}/generated
+
+SRC += $(wildcard ${KEYBOARD_PATH}/*.c) $(wildcard ${KEYBOARD_PATH}/*.cpp)
+VPATH += ${KEYBOARD_PATH}
 SRC += $(wildcard ${GENERATED_PATH}/*.c)
 VPATH += ${GENERATED_PATH}
