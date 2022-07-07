@@ -72,6 +72,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define I2C1_SDA_PIN        LINE_PIN18
 #define I2C1_SCL_PAL_MODE   PAL_MODE_ALTERNATIVE_2
 #define I2C1_SDA_PAL_MODE   PAL_MODE_ALTERNATIVE_2
+// #define PIMORONI_TRACKBALL_DEBUG_INTERVAL 1000
 
 /*
  * SPI defines (Display)
@@ -79,7 +80,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SPI_DRIVER SPID1
 #define SPI_SCK_PIN LINE_PIN14
 #define SPI_MOSI_PIN LINE_PIN11
-#define SPI_MISO_PIN LINE_PIN12
+#define SPI_MISO_PIN LINE_PIN32 // Set to unused pin
 #define SPI_CHIP_SELECT_PIN LINE_PIN10
 #define SPI_RESET_PIN LINE_PIN16
 #define SPI_DC_PIN LINE_PIN15

@@ -28,6 +28,16 @@ static painter_image_handle_t my_image;
 static painter_font_handle_t my_font;
 
 
+static inline void reset_col1(void) {
+    ATOMIC_BLOCK_FORCEON {
+        setPinInputHigh(LINE_PIN11);
+    }
+}
+
+void matrix_scan_kb(void) {
+    reset_col1();
+}
+
 void keyboard_post_init_kb(void) {
     // Customise these values to desired behaviour
     debug_enable=true;
