@@ -3,7 +3,6 @@ BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration(+1000)
 COMMAND_ENABLE = no         # Commands for debug and configuration
 # Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
 SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
-BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality on B7 by default
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 MIDI_ENABLE = no            # MIDI support (+2400 to 4200, depending on config)
 UNICODE_ENABLE = no         # Unicode
@@ -26,7 +25,7 @@ BACKLIGHT_ENABLE = yes
 BACKLIGHT_DRIVER = custom
 
 DEFAULT_FOLDER = slimy
-LAYOUTS = ortho_1x1
+LAYOUTS = ortho_4x12
 
 # MCU name
 MCU = MK20DX256

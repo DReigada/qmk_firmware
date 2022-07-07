@@ -24,11 +24,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MANUFACTURER    none
 #define PRODUCT         slimy
 
+#define LINE_PIN0 PAL_LINE(TEENSY_PIN0_IOPORT, TEENSY_PIN0)
 /* key matrix size */
-#define MATRIX_ROWS 1
-#define MATRIX_COLS 1
-#define MATRIX_COL_PINS { LINE_PIN30 }
-#define MATRIX_ROW_PINS { LINE_PIN31 }
+#define MATRIX_ROWS 4
+#define MATRIX_COLS 12
+#define MATRIX_ROW_PINS { LINE_PIN3, LINE_PIN2, LINE_PIN1, LINE_PIN0 }
+#define MATRIX_COL_PINS { LINE_PIN11, LINE_PIN8, LINE_PIN7, LINE_PIN6, LINE_PIN5, LINE_PIN4, LINE_PIN12, LINE_PIN17, LINE_PIN20, LINE_PIN21, LINE_PIN22, LINE_PIN23 }
 #define UNUSED_PINS
 
 #define DIODE_DIRECTION COL2ROW
