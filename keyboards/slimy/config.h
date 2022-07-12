@@ -85,6 +85,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SPI_RESET_PIN LINE_PIN16
 #define SPI_DC_PIN LINE_PIN15
 #define SPI_DIVISOR 2
+#define SPI_MODE 3
 
 #define PAL_MODE_ALTERNATE_PUSHPULL PAL_MODE_ALTERNATIVE_2
 
@@ -93,7 +94,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * Quantum painter config
  */
 // #define QUANTUM_PAINTER_DEBUG TRUE
-#define QP_PIXDATA_BUFFER_SIZE 1024*30
+#define QUANTUM_PAINTER_PIXDATA_BUFFER_SIZE 256
 #define QUANTUM_PAINTER_SUPPORTS_256_PALETTE TRUE
 
 

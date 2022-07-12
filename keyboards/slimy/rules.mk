@@ -33,6 +33,7 @@ BOARD = IC_TEENSY_3_1
 BOOTLOADER = halfkay
 # Enter lower-power sleep mode when on the ChibiOS idle thread
 OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
+LDFLAGS += -lstdc++
 
 KEYBOARD_PATH = keyboards/slimy
 GENERATED_PATH=${KEYBOARD_PATH}/generated
